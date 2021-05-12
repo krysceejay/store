@@ -18,7 +18,8 @@
     "@capacitor/core": "^2.4.7",
     "next": "10.0.9",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "redux": "^4.1.0"
   },
   "devDependencies": {
     "@capacitor/cli": "^2.4.7",
