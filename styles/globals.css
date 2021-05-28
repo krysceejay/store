@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
+
+.btn {
+  @apply font-bold py-4 px-8;
+}
+.btn-blue {
+  @apply bg-black text-white;
+}
+.btn-blue:hover {
+  @apply bg-white text-black;
+}
+
+.overlay {
+  @apply bg-overlay-color h-full absolute top-0 left-0 right-0 bottom-0 w-full;
+}
+
 @tailwind utilities;
