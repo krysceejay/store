@@ -5,10 +5,10 @@ module.exports = {
     extend: {
       colors: {
         "main-color": "#d09560",
-        "overlay-color": "rgba(0, 0, 0, 0.1)",
+        "overlay-color": "rgba(0, 0, 0, 0.3)",
       },
       backgroundImage: theme => ({
-        "banner-img": "url('/img/banner1.png')",
+        "banner-img": "url('/img/woman.png')",
       }),
       fontSize: {
         "7xl": "4.5rem",
@@ -21,6 +21,9 @@ module.exports = {
         88: "28rem",
         96: "33rem",
         144: "36rem",
+      },
+      translate: {
+       '-2/25': '-8%',
       },
     },
   },

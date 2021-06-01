@@ -6,9 +6,9 @@ const Layout = ({ children, title }) => {
       <Head>
         <title>{title}</title>
       </Head>
-      <nav className="flex justify-between items-center border-b-4 border-gray-200 bg-white sticky top-0 z-10 px-20 py-4">
+      <nav className="flex justify-between items-center border-b-2 border-gray-200 bg-white sticky top-0 z-10 px-20 py-4">
         <a>
-          <div className="mylogo font-bold text-2xl leading-relaxed tracking-widest"><span className="text-primary">My</span>Logo</div>
+          <div className="mylogo font-bold text-2xl leading-relaxed tracking-widest"><span className="text-primary">Fine</span>Logo</div>
         </a>
         <ul className="flex">
           <li className="px-6 py-1">
