@@ -1,6 +1,12 @@
+import {FC, ReactNode} from "react"
 import Head from "next/head"
 
-const Layout = ({ children, title }) => {
+interface IProps {
+  children: ReactNode,
+  title: string
+}
+
+const Layout: FC<IProps> = ({ children, title }) => {
   return (
     <div>
       <Head>

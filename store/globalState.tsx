@@ -1,12 +1,12 @@
-import React, { createContext, useReducer, useEffect } from 'react'
-import authReducer , {initialState} from './reducers/authReducer'
+import React, { createContext, useReducer, useEffect, FC, ReactNode } from 'react'
+import authReducer , {initialState, IAuthState, IAuthAction} from './reducers/authReducer'
 import postReducer, {postInitialState} from './reducers/postReducer'
 
-export const DataContext = createContext<any>({})
+export const DataContext = createContext({})
 
-export const DataProvider = ({children}) => {
+export const DataProvider: FC<ReactNode> = ({children}) => {
 
-    const [authstate, authDispatch] = useReducer<React.Reducer<any, any>>(authReducer, initialState)
+    const [authstate, authDispatch] = useReducer<React.Reducer<IAuthState, IAuthAction>>(authReducer, initialState)
     const [poststate, postDispatch] = useReducer<React.Reducer<any, any>>(postReducer, postInitialState)
   
     // useEffect(() => {

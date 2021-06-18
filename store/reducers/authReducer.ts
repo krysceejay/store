@@ -1,23 +1,23 @@
 import {SET_LOGIN_STATE} from '../types/authTypes'
 
-interface UserI {
+interface IUser {
   firstName: string,
   lastName: string,
 }
 
-interface AuthStateI {
+export interface IAuthState {
   isLoggedIn: boolean,
   token: string,
-  user: UserI,
-  users: UserI[]
+  user: IUser,
+  users: IUser[]
 }
 
-interface AuthActionI {
+export interface IAuthAction {
   type: string,
-  payload?: UserI
+  payload?: IUser
 }
   
-  export const initialState: AuthStateI = {
+  export const initialState: IAuthState = {
     isLoggedIn: false,
     token: null,
     user: null,
@@ -25,7 +25,7 @@ interface AuthActionI {
     //isLoading: false,
   }
   
- const authReducer = (state: AuthStateI, action: AuthActionI):  AuthStateI => {
+ const authReducer = (state: IAuthState, action: IAuthAction):  IAuthState => {
     const { type, payload } = action
     switch (type) {
       case SET_LOGIN_STATE:

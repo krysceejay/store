@@ -1,7 +1,7 @@
-import React from 'react'
+import {FC} from 'react'
 import Layout from '../components/layouts/Layout'
 
-const Home = () => {
+const Home: FC = () => {
   return (
     <Layout title="Home">
         <div className="w-full h-screen -mt-10 bg-banner-img bg-no-repeat bg-cover bg-center relative">
