@@ -26,6 +26,9 @@ const Layout: FC<IProps> = ({ children, title }) => {
           <li className="px-6 py-1">
           <a href="" className="uppercase font-bold hover:text-main-color">Profile</a>
           </li>
+          <li className="px-6 py-1">
+          <a href="" className="uppercase font-bold hover:text-main-color">Account</a>
+          </li>
         </ul>
         <div className="flex items-center">
           <div>
